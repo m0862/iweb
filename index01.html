@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/font-awesome.css">
+		<title>iweb在线课堂</title>
+		<style>
+			.topbar {
+				width: 100%;
+				height: 29px;
+				line-height: 29px;
+				background: #F9F9F9;
+				border-bottom: 1px solid #eee;
+				text-align: right;
+			}
+			.container {
+				width: 1000px;
+				margin-left: auto;
+				margin-right: auto;
+				border: 1px solid #aaa;
+					/*仅供测试用*/
+				
+			}
+			.theme {
+				
+			}
+			.reverse {		/*主题色的反色*/
+				color: #f60;
+			}
+			.topbar > .container > a ,
+			.topbar > .container > span{		/*复杂选择器:>选择孩子*/
+				padding-left: 1em;
+			}
+			.searchbar {
+				width: 100%;
+				background: #fff;
+			}
+			.searchbar > .container{
+				padding-top: 2em;
+				padding-bottom: 2em;
+			}
+			.search {
+				float: right;
+				margin-top: 6px;
+			}
+			.search >input {
+				width: 430px;
+				height: 32px;
+				border: 1px solid #ccc;
+				/* 输入框获得焦点是的外围轮廓线 */
+				outline: none;
+				padding-left: .6em;
+				padding-right: .6em;
+			}
+			.fa-search {
+				background: #57BC4C;
+				color: #FFF;
+				font-size: 2.2em;
+				width: 50px;
+				height: 32px;
+				line-height: 32px;
+				text-align: center;
+				font-weight: lighter;
+			}
+		</style>
+</head>
+<body>
+	<!-- 顶部条 -->
+	<div class="topbar">
+		<div class="container">
+			<a href="#">
+			<span class="fa fa-star"></span>
+			收藏i前端
+			</a>
+			<a href="#">
+				<span class="fa fa-mobile-phone fa-lg"></span>
+				<span class="reverse">下载手机客户端</span>
+			</a>
+			<span>
+				<span class="fa fa-envelope"></span>
+				反馈邮箱:iweb@tedu.cn
+				</span>
+				<span class="fa fa-mobile-phone ">
+				客户热线:4008-200-200
+			</span>
+		</div>
+	</div>
+	<!-- 搜索条 -->
+	<div class="searchbar">
+		<div class="container">
+			<!-- LOGO图片 -->
+		<img src="img/logo.png" alt="iweb LOGO">
+		<!-- 输入框 -->
+		<div class="search">
+		<input type="text" placeholder="课程搜索"><span class="fa fa-search fa-lg"></span>
+		</div>
+		<!-- 我的购物车 -->
+		
+		
+	</div>
+	</div>
+</body>
+</html>
