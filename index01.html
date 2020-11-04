@@ -46,7 +46,7 @@
 				float: right;
 				margin-top: 6px;
 			}
-			.search >input {
+			.search > input {
 				width: 430px;
 				height: 32px;
 				border: 1px solid #ccc;
@@ -65,6 +65,33 @@
 				text-align: center;
 				font-weight: lighter;
 			}
+			.cart {
+				width: 130px;
+				height: 32px;
+				float: right;
+				margin-top: 6px;
+				border: 1px solid #555;
+				padding-top: .4em;
+				padding-bottom: .4em;
+				margin-left: 2em;
+			}
+			.fa-shopping-cart {
+				color: #57BC4C;
+				font-size: 2em;
+				height: 32px;
+				line-height: 32px;
+			}
+			.tiao {
+				width: 100%;
+				height: 45px;
+				color: #F9F9F9;
+				line-height: 45px;
+				background: #57BC4C;
+				border-bottom: 1px solid #eee;
+				text-align: center;
+				font-size: 1.5em;
+			}
+			
 		</style>
 </head>
 <body>
@@ -91,16 +118,25 @@
 	<!-- 搜索条 -->
 	<div class="searchbar">
 		<div class="container">
+			
 			<!-- LOGO图片 -->
 		<img src="img/logo.png" alt="iweb LOGO">
+		
+		<!-- 我的购物车 -->
+		<div class="cart">
+		<span class="fa fa-shopping-cart fa-lg"></span>
+		我的购物车(0)
+		<span class="fa fa-sort-desc  fa-lg"></span>
+		</div>
+		
 		<!-- 输入框 -->
 		<div class="search">
 		<input type="text" placeholder="课程搜索"><span class="fa fa-search fa-lg"></span>
 		</div>
-		<!-- 我的购物车 -->
-		
-		
 	</div>
+	</div>
+	<div class="tiao">
+		<a href="#">首页</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">全部课程</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">基础课程</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">进阶课程</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">核心课程</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">名师堂</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">校区</a>
 	</div>
 </body>
 </html>
