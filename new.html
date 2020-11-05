@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="icon"  href="img/favicon.ico"/>
+	<title>iweb在线课堂</title>
+	<style>
+		.topbar{
+			width:100%;
+			height: 29px;
+			line-height: 29px;
+			background: #f9f9f9;
+			border-bottom: 1px solid #eee;
+			text-align: right;
+		}
+		.container{
+			width: 1000px;
+			margin-left: auto;
+			margin-right: auto;
+			border: 1px solid #aaa;
+		}
+		/* 复杂选择器:>选择孩子 */
+		.topbar>.container>a,
+		.topbar>.container>span {
+			padding-left: 1em;
+		}
+		/* 主题色反色 */
+		.theme-reverse{
+			color: #f60;
+		}
+		/* 主题色 */
+		.theme{	
+			
+		}
+		/* logo和搜索栏 */
+		.searchbar{
+			widows: 100%;
+			background: #fff;
+		}
+		.searchbar>.container{
+			padding-top: 2em;
+			padding-bottom: 2em;
+		}
+		.search{
+			float: right;
+			margin-top: 6px;
+		}
+		.search > input{
+			width: 430px;
+			height: 32px;
+			border: 1px solid #ccc;
+			/* 输入框获得焦点时的外围轮廓线 */
+			outline: none;
+			/* css中0.8打成.8 */
+			padding-left: .7em;
+			padding-right: .7em;
+		}
+		/*购物车重构*/
+		.search > .shoppingc > .fa-shopping-cart {
+			color: #57BC4C;
+		}
+		.search > .shoppingc > .fa-caret-down {
+			color: #57BC4C;
+		}
+		.search > .fa-search {
+			background: #57bc4c;
+			color: #fff;
+			width: 50px;
+			height: 32px;
+			font-size: 2em;
+			line-height: 32px;
+			text-align: center;
+		}
+		.shoppingc{
+			width: 140px;
+			height: 32px;
+			border: 1px solid #ddd;
+			background: #F9F9F9;
+			line-height: 32px;
+			text-align: center;
+			margin-left: 20px;
+		}
+		.navbar {
+		    height: 40px;
+		    background: #57bc4c;
+		    border-bottom: 2px solid #c1eebd;
+		}
+		.nav {
+		    float: left;
+		}
+		.nav > .linav {
+			width: 78px;
+			height: 40px;
+			font-size: 15px;
+			line-height: 40px;
+			text-align: center;
+			float: left;
+			border: 1px solid #ccc;
+		}
+		.nav > .linav:hover{
+			background: #3da232;
+		}
+		.nav > .linav > a {
+			color: #fff;
+		}
+		.nav_user {
+		    float: right;
+		    position: relative;
+		}
+		.nav_user > .user_login{
+			width: 140px;
+			height: 40px;
+			font-size: 15px;
+			line-height: 40px;
+			text-align: center;
+			color: #fff;
+			border: 1px solid #ccc;
+			background: #77c558;
+		}
+		.nav_user > .user_login > a {
+			color: #fff;
+		}
+		.nav_user > .user_login > a:hover {
+			color: #FFFF00;
+		}
+		.sanjiao {
+			transition: all .3s;
+		}
+		.sanjiao:hover {
+			transform-origin: center;
+			transform: rotate(180deg);
+			
+		}
+
+	</style>
+</head>
+<body>
+	<!-- 顶部条 -->
+	<div class="topbar">
+		<div class="container">
+			<a href="#">
+				<span class="fa fa-star"></span>收藏i前端
+			</a>
+			<a href="#">
+				<span class="fa fa-mobile-phone fa-lg"></span><span class="theme-reverse">下载手机客户端</span>
+			</a>
+			<span class="fa fa-envelope"></span>反馈邮箱TJ@1 63.com
+			<span class="fa fa-phone"></span>客服热线：4008-200-200
+		</div>
+	</div>
+	<!-- 搜索条 -->
+	<div class="searchbar">
+		<div class="container">
+			<!-- logo图片 -->
+			<img src="img/logo.png" alt="iWeb_LOGO">
+			<!-- 我的购物车 -->
+			<div class="search">
+				<div class="shoppingc">
+					<span class="fa fa-shopping-cart fa-lg"></span>
+					<span>我的购物车(0)</span>
+					<span class="fa fa-caret-down sanjiao"></span>
+				</div>
+			</div>
+			<!-- 输入框 -->
+			<div class="search">
+				<input type="text" placeholder="课程搜索"><span class="fa fa-search fa-lg"></span>
+			</div>
+		</div>
+	</div>
+	<!-- 导航条 -->
+	<div class="navbar">
+		<div class="container">
+			<div class="nav">
+				<div class="linav">
+					<a href="index.html">首页</a>
+				</div>
+				<div class="linav">
+					<a href="index.html">全部课程</a>
+				</div>
+				<div class="linav">
+					<a href="index.html">基础课程</a>
+				</div>
+				<div class="linav">
+					<a href="index.html">核心课程</a>
+				</div>
+				<div class="linav">
+					<a href="index.html">进阶课程</a>
+				</div>
+				<div class="linav">
+					<a href="index.html">名师堂</a>
+				</div>
+				<div class="linav">
+					<a href="index.html">校区</a>
+				</div>
+			</div>
+			<div class="nav_user">
+				<div class="user_login">
+					<a href="#">登录</a> | <a href="#">注册</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>
