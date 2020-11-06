@@ -46,6 +46,7 @@
 				float: right;
 				margin-top: 6px;
 			}
+			
 			.search > input {
 				width: 430px;
 				height: 32px;
@@ -98,16 +99,50 @@
 				transform: rotate(180deg);
 			}
 			
-			.tiao {
-				width: 100%;
-				height: 45px;
-				color: #F9F9F9;
-				line-height: 45px;
-				background: #57BC4C;
-				border-bottom: 1px solid #eee;
-				text-align: center;
-				font-size: 1.5em;
+			.navbar {
+			    height: 40px;
+			    background: #57bc4c;
+			    border-bottom: 2px solid #c1eebd;
 			}
+			.nav {
+			    float: left;
+			}
+			.nav > .linav {
+				width: 78px;
+				height: 40px;
+				font-size: 15px;
+				line-height: 40px;
+				text-align: center;
+				float: left;
+				border: 1px solid #ccc;
+			}
+			.nav > .linav:hover{
+				background: #3da232;
+			}
+			.nav > .linav > a {
+				color: #fff;
+			}
+			.nav_user {
+			    float: right;
+			    position: relative;
+			}
+			.nav_user > .user_login{
+				width: 140px;
+				height: 40px;
+				font-size: 15px;
+				line-height: 40px;
+				text-align: center;
+				color: #fff;
+				border: 1px solid #ccc;
+				background: #77c558;
+			}
+			.nav_user > .user_login > a {
+				color: #fff;
+			}
+			.nav_user > .user_login > a:hover {
+				color: #FFFF00;
+			}
+			
 			.cart-container > .dropdown {
 				position: absolute;
 				top: 34px;
@@ -169,8 +204,39 @@
 		</div>
 	</div>
 	</div>
-	<div class="tiao">
-		<a href="#">首页</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">全部课程</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">基础课程</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">进阶课程</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">核心课程</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">名师堂</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">校区</a>
+	<!-- 导航条 -->
+	<div class="navbar">
+		<div class="container">
+			<div class="nav">
+				<div class="linav">
+					<a href="index.html">首页</a>
+				</div>
+				<div class="linav">
+					<a href="index.html">全部课程</a>
+				</div>
+				<div class="linav">
+					<a href="index.html">基础课程</a>
+				</div>
+				<div class="linav">
+					<a href="index.html">核心课程</a>
+				</div>
+				<div class="linav">
+					<a href="index.html">进阶课程</a>
+				</div>
+				<div class="linav">
+					<a href="index.html">名师堂</a>
+				</div>
+				<div class="linav">
+					<a href="index.html">校区</a>
+				</div>
+			</div>
+			<div class="nav_user">
+				<div class="user_login">
+					<a href="#">登录</a> | <a href="#">注册</a>
+				</div>
+	
+			</div>
+		</div>
 	</div>
 	<script>
 		// 点击‘我的购物车’则后面的小三角开始旋转，离开则转回来
